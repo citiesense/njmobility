@@ -2,6 +2,8 @@
 /** @jsx jsx */
 import { css, jsx } from '@emotion/core';
 import { useEffect } from 'react';
+import logo from 'images/logo2.svg';
+import { Link } from 'react-router-dom';
 
 export default function MobilityMap() {
   useEffect(() => {
@@ -28,10 +30,25 @@ export default function MobilityMap() {
       .h_iframe {
         position:relative;width:100%;height:100%;margin:0 auto;background:#CCC; min-height: 800px;
       }
+      .logo {
+        height: 1.6rem;
+      }
+
+      a {
+        text-decoration: none;
+      }
 
     `)}
     >
-      <h5 className="page-title text-uppercase">New Jersey Mobility Map</h5>
+      <div className="d-flex justify-content-between">
+        <Link to="/">
+          <h5 className="d-flex align-items-center">
+            <img src={logo} className="logo mr-2" alt="logo" />{' '}
+            <span>Citiesense</span>
+          </h5>
+        </Link>
+        <h5 className="page-title text-uppercase">New Jersey Mobility Map</h5>
+      </div>
       <div
         className="map-container"
         css={css(`
@@ -47,7 +64,7 @@ export default function MobilityMap() {
         <iframe
           title="map"
           frameBorder="0"
-          src="https://www.citiesense.com/dashboards/338/embed?filter%5Bbbox%5D=-74.62912917137147%2C40.46087054580426%2C-73.79966139793397%2C41.06208632868658&filter%5BareaId%5D=835&filter%5Btype%5D%5B0%5D=StreetscapeAsset&mapConfig%5Bzoom%5D=10&areaId=835&deck%5BTransportation%5D%5BNJ%20Railroad%20Stations%5D=on&deck%5BAdministrative%20Boundaries%5D%5BNJ%20Railroad%20Stations%5D=on&load%5BdashboardId%5D=338&load%5Bbbox%5D=-74.62912917137147%2C40.46087054580426%2C-73.79966139793397%2C41.06208632868658&load%5BshowDrawingTool%5D=true&load%5BshowBoundary%5D=false&load%5BpanelName%5D=&load%5BshowShapes%5D=false"
+          src="https://www.citiesense.com/dashboards/338/embed?filter%5Bbbox%5D=-74.21002194285393%2C40.64185644179413%2C-74.00265499949457%2C40.80499744569194&filter%5BareaId%5D=835&filter%5Btype%5D%5B0%5D=StreetscapeAsset&mapConfig%5Bzoom%5D=12&areaId=835&deck%5BTransportation%5D%5BNJ%20Railroad%20Stations%5D=on&deck%5BAdministrative%20Boundaries%5D%5BNJ%20Railroad%20Stations%5D=on&load%5BdashboardId%5D=338&load%5Bbbox%5D=-74.21002194285393%2C40.64185644179413%2C-74.00265499949457%2C40.80499744569194&load%5BshowDrawingTool%5D=true&load%5BshowBoundary%5D=false&load%5BpanelName%5D=&load%5BshowShapes%5D=false"
         />
         <div>
           <div id="disqus_thread" />
