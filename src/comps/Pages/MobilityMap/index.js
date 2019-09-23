@@ -47,7 +47,7 @@ export default function MobilityMap() {
         <iframe
           title="map"
           frameBorder="0"
-          src="https://www.citiesense.com/dashboards/338/embed?filter%5Bbbox%5D=-76.38751029968263%2C38.9198368897342%2C-73.06963920593263%2C41.34686921351581&filter%5BareaId%5D=835&mapConfig%5Bzoom%5D=8&areaId=835&deck%5BTransportation%5D%5BNJ%20Bus%20Stops%5D=on&deck%5BTransportation%5D%5BNJ%20Railroad%20Stations%5D=on&deck%5BAdministrative%20Boundaries%5D%5BNJ%20Railroad%20Stations%5D=on&load%5BdashboardId%5D=338&load%5Bbbox%5D=-76.38751029968263%2C38.9198368897342%2C-73.06963920593263%2C41.34686921351581&load%5BshowDrawingTool%5D=true&load%5BshowBoundary%5D=false&load%5BpanelName%5D=&load%5BshowShapes%5D=false"
+          src="https://www.citiesense.com/dashboards/338/embed?filter%5Bbbox%5D=-74.30956006050111%2C40.63386659510141%2C-73.89482617378236%2C40.934374632233116&filter%5BareaId%5D=835&filter%5Btype%5D%5B0%5D=StreetscapeAsset&mapConfig%5Bzoom%5D=11&areaId=835&deck%5BTransportation%5D%5BNJ%20Bus%20Stops%5D=on&deck%5BTransportation%5D%5BNJ%20Railroad%20Stations%5D=on&deck%5BAdministrative%20Boundaries%5D%5BNJ%20Railroad%20Stations%5D=on&load%5BdashboardId%5D=338&load%5Bbbox%5D=-74.30956006050111%2C40.63386659510141%2C-73.89482617378236%2C40.934374632233116&load%5BshowDrawingTool%5D=true&load%5BshowBoundary%5D=false&load%5BpanelName%5D=&load%5BshowShapes%5D=false"
         />
         <div>
           <div id="disqus_thread" />
