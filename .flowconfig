@@ -1,0 +1,25 @@
+[ignore]
+.*/node_modules/jsonlint-lines/.*
+.*/node_modules/@mapbox/jsonlint-lines-primitives/.*
+
+[include]
+
+[libs]
+src/interfaces/
+flow-typed/npm/
+./node_modules/mapbox-gl/flow-typed
+./node_modules/mapbox-gl/dist/mapbox-gl.js.flow
+
+[lints]
+
+[options]
+esproposal.decorators=ignore
+esproposal.class_static_fields=enable
+suppress_type=$FlowIssue
+include_warnings=true
+module.name_mapper='^images/\(.*\)$' -> '<PROJECT_ROOT>/src/images/\1'
+module.name_mapper='^lib/\(.*\)$' -> '<PROJECT_ROOT>/src/lib/\1'
+module.name_mapper='^comps/\(.*\)$' -> '<PROJECT_ROOT>/src/comps/\1'
+module.ignore_non_literal_requires=true
+
+[strict]

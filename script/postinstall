@@ -1,0 +1,14 @@
+#!/bin/bash
+
+set -e
+
+if [[ "$_system_type" = "Darwin" ]]; then
+  for i in 399 372 363 ; do
+    sed -i '' "${i}s/keyValMap(/keyValMap<*,*>(/" node_modules/graphql/utilities/buildASTSchema.js.flow
+  done
+  sed -i '' '399s/SetSeq<T>/any/' node_modules/immutable/dist/immutable.js.flow
+  sed -i '' '22s/value./(value: any)./' node_modules/graphql/jsutils/inspect.js.flow
+  sed -i '' '508s/thunk()/(thunk: any)()/' node_modules/graphql/type/definition.js.flow
+  sed -i '' '125s/value.valueOf()/(value: any).valueOf()/' node_modules/graphql/type/scalars.js.flow
+  sed -i '' '197s/value.valueOf()/(value: any).valueOf()/' node_modules/graphql/type/scalars.js.flow
+fi

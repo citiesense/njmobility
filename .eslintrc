@@ -1,0 +1,9 @@
+{
+  "extends": [
+    "./.eslint/index.js",
+  ],
+  "globals": {
+    "$": true,
+    "__DEV__": true,
+  }
+}
