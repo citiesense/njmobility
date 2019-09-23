@@ -48,7 +48,7 @@
     "build": "env-cmd -e production react-app-rewired build",
     "test": "env-cmd -e production react-app-rewired test",
     "eject": "react-scripts eject",
-    "deploy": "npm run build && gh-pages -d build",
+    "deploy": "git push origin master:production -f",
     "postinstall": "./script/postinstall"
   },
   "eslintConfig": {
