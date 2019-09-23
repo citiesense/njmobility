@@ -43,7 +43,6 @@ export default function MobilityMap() {
         <Link to="/">
           <h5 className="d-flex align-items-center">
             <img src={logo} className="logo mr-2" alt="logo" />{' '}
-            <span>Citiesense</span>
           </h5>
         </Link>
         <h5 className="page-title text-uppercase">New Jersey Mobility Map</h5>
