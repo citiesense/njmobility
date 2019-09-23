@@ -31,7 +31,7 @@ export default function MobilityMap() {
 
     `)}
     >
-      <h1 className="page-title">New Jersey Mobility Map</h1>
+      <h5 className="page-title text-uppercase">New Jersey Mobility Map</h5>
       <div
         className="map-container"
         css={css(`
