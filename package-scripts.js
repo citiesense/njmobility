@@ -15,10 +15,6 @@ module.exports = {
         lastDeploy: 'nps "test.since origin/to_production"',
       },
     },
-    deploy: {
-      default: 'flow && yarn run deploy',
-      ci:
-        'flow && echo && git push origin master:ci -f && echo && git push origin master -f',
-    },
+    deploy: 'yarn run deploy',
   },
 };
