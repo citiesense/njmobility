@@ -33,7 +33,6 @@ export default function MobilityMap() {
       .logo {
         height: 1.6rem;
       }
-
       a {
         text-decoration: none;
       }
@@ -64,7 +63,7 @@ export default function MobilityMap() {
         <iframe
           title="map"
           frameBorder="0"
-          src="https://www.citiesense.com/dashboards/338/embed?filter%5Bbbox%5D=-74.21002194285393%2C40.64185644179413%2C-74.00265499949457%2C40.80499744569194&filter%5BareaId%5D=835&filter%5Btype%5D%5B0%5D=StreetscapeAsset&mapConfig%5Bzoom%5D=12&areaId=835&deck%5BTransportation%5D%5BNJ%20Railroad%20Stations%5D=on&deck%5BAdministrative%20Boundaries%5D%5BNJ%20Railroad%20Stations%5D=on&load%5BdashboardId%5D=338&load%5Bbbox%5D=-74.21002194285393%2C40.64185644179413%2C-74.00265499949457%2C40.80499744569194&load%5BshowDrawingTool%5D=true&load%5BshowBoundary%5D=false&load%5BpanelName%5D=&load%5BshowShapes%5D=false"
+          src="https://www.citiesense.com/dashboards/338/embed?filter%5Bbbox%5D=-74.21002194285393%2C40.64185644179413%2C-74.00265499949457%2C40.80499744569194&filter%5BareaId%5D=835&filter%5Btype%5D%5B0%5D=StreetscapeAsset&mapConfig%5Bzoom%5D=12&areaId=835&deck%5BTransportation%5D%5BNJ%20Railroad%20Stations%5D=on&deck%5BAdministrative%20Boundaries%5D%5BNJ%20Railroad%20Stations%5D=on&load%5BdashboardId%5D=338&load%5Bbbox%5D=-74.21002194285393%2C40.64185644179413%2C-74.00265499949457%2C40.80499744569194&load%5BshowDrawingTool%5D=true&load%5BshowBoundary%5D=false&load%5BpanelName%5D=&load%5BshowShapes%5D=true"
         />
         <div>
           <div id="disqus_thread" />
