@@ -22,6 +22,7 @@ module.exports = {
       '^comps/(.+)$': '<rootDir>/src/comps/$1',
       '^lib/(.+)$': '<rootDir>/src/lib/$1',
       '^images/(.+)$': '<rootDir>/src/images/$1',
+      '^store/(.+)$': '<rootDir>/src/store/$1',
     };
     return config;
   },

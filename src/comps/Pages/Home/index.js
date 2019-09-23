@@ -1,19 +1,18 @@
 /*@flow*/
 import React from 'react';
-import logo from './citi-logo.svg';
-import './App.scss';
+import logo from 'images/citi-logo.svg';
+import { Link } from 'react-router-dom';
+// import { hot } from 'react-hot-loader/root';
 
-function App() {
+export default function Home() {
   return (
-    <div className="App">
+    <div>
       <header className="App-header">
-        <button className="btn btn-link">
+        <Link to="/map" className="btn btn-link">
           <img src={logo} className="App-logo" alt="logo" />
           <div className="mt-3 text-info h3">Spark</div>
-        </button>
+        </Link>
       </header>
     </div>
   );
 }
-
-export default App;

@@ -12,6 +12,8 @@
     "apollo-client": "2.6.4",
     "apollo-link": "1.2.13",
     "apollo-link-http": "1.5.16",
+    "classnames": "2.2.6",
+    "env-cmd": "10.0.1",
     "eslint": "6.4.0",
     "eslint-config-airbnb": "18.0.1",
     "eslint-plugin-flowtype": "4.3.0",
@@ -24,6 +26,8 @@
     "folktale": "2.3.2",
     "graphql": "14.5.7",
     "hammerjs": "2.0.8",
+    "history": "4.10.1",
+    "history-query-enhancer": "1.0.4",
     "immutable": "https://github.com/volkanunsal/immutable-js.git#a3d807aa6e867f2ce7d59c762171620889f4d2d5",
     "mapbox-gl": "1.3.1",
     "node-sass": "4.12.0",
@@ -32,15 +36,18 @@
     "react-apollo": "3.1.1",
     "react-app-rewired": "2.1.3",
     "react-dom": "^16.9.0",
+    "react-hot-loader": "4.12.14",
+    "react-router-dom": "5.0.1",
     "react-scripts": "3.1.2",
     "svg-sprite-loader": "4.1.6",
     "use-react-router": "1.0.7"
   },
   "scripts": {
-    "start": "react-scripts start",
-    "build": "react-scripts build",
-    "test": "react-scripts test",
-    "eject": "react-scripts eject"
+    "start": "env-cmd -e development react-app-rewired start",
+    "build": "env-cmd -e production react-app-rewired build",
+    "test": "env-cmd -e production react-app-rewired test",
+    "eject": "react-scripts eject",
+    "postinstall": "./script/postinstall"
   },
   "eslintConfig": {
     "extends": "react-app"
